@@ -1,8 +1,9 @@
 import React from 'react';
+import style from './recipe.module.css';
 
 function Recipe(props) {
     return (
-        <div>
+        <div className={style.recipes}>
             <h1>{props.title}</h1>
             <p>Calories: {Math.ceil(props.calories)}</p>
             <img src={props.image} alt="" />
